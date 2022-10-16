@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bendy and the ink machine</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+</head>
+
+<body>
+	<audio>
+		<source src="images/A_Songwriter_Scorned.mp3">
+	</audio>
+
+	<div id="fon">
+	    <h1>Цель: набрать 20 очков</h1>
+	</div>
+	
+	<div id="app">
+
+		
+
+		<div id="game" style="display: none;" >
+			
+			<div id="lifes">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<div id="options">
+				
+				<div id="sound">
+					<img src="images/mute_sound.png">
+				</div>
+			</div>
+
+			<div id="player" class="skin_1"></div>
+				
+			
+		</div>
+		
+		
+		<div id="start"  >
+
+			
+			
+			<h2>Выбери игрока</h2>
+
+			<div id="select-player" class="clearfix">
+				<span class="selected" id="skin_1">
+					<img src="images/20220609-200550-unscreen_1.gif">
+				</span>
+			
+				<span id="skin_2">
+					<img src="images/3_1.gif">
+				</span>
+			</div>
+			<button id = "start-btn">Start</button>
+			
+		</div>
+
+		<div id="end" style="display: none;" >
+			<h2>Вы проиграли</h2>
+			<h3>Вы набрали: <span></span></h3>
+			<img src="images/pngwing.com.png">
+			<button >Restart</button>
+		</div>
+
+		<div id="win" style="display: none;" >
+			<h2>Вы выиграли. Поздравляем!!!</h2>
+			<h3>Вы набрали: <span></span></h3>
+			<p> Вы успешно достигли своей цели, в качеств награды, посмотрите видео или сразу нажмите на "Restart" </p>
+			<img src="images/pngwing.com_2.png">
+			<video id = "video_win" controls width="300px" height="auto" preload="auto" >
+				<source src="images/Credits.mp4" type="video/mp4"></source>
+			</video>
+			<button>Restart</button>
+		</div>
+		</div>
+	</div>
+
+	
+	<script src="script.js"></script>
+	
+	
+</body>
+</html>
